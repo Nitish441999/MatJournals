@@ -72,7 +72,7 @@ function Contact() {
             <FaMapMarkerAlt className='text-blue-500 text-2xl mr-4' />
             <div>
               <h4 className='text-lg font-semibold text-gray-700'>Address</h4>
-              <p className='text-md text-gray-500'>123 Street Name, City, Country</p>
+              <p className='text-md text-gray-500'>New B47 B-Block New Ashok Nagar,<br/>New Delhi, India</p>
             </div>
           </div>
         </div>
