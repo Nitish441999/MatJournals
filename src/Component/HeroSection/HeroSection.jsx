@@ -57,11 +57,11 @@ function HeroSection() {
             {/* Image Section */}
             <div className='w-full md:w-1/2 h-auto rounded-full overflow-hidden flex justify-center items-center relative'>
               <img
-                className='w-full h-full object-cover'
-                src='https://static.wixstatic.com/media/c837a6_a5f904abc9224779abfc65cb53fa6ba7~mv2.jpg/v1/crop/x_158,y_151,w_1117,h_1117/fill/w_600,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/gettyimages-1284121212-2048x2048_edited_.jpg'
+                className='w-full h-full object-cover bg-gray-100'
+                src='https://i.imgur.com/V1jQHWx.png'
                 alt='Developer'
               />
-              <div className='absolute inset-0 border-8 border-transparent rounded-full animate-spin-slow' style={{ borderColor: 'rgba(128, 128, 128, 0.5)' }}></div>
+              {/* <div className='absolute inset-0 border-8 border-transparent rounded-full animate-spin-slow' style={{ borderColor: 'rgba(128, 128, 128, 0.5)' }}></div> */}
             </div>
 
             {/* Text Section */}
@@ -88,7 +88,7 @@ function HeroSection() {
                 />
               </h3>
               <p className='text-md font-light mb-4'>
-                I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.
+              I am Nitish Kumar, a passionate Fullstack Developer with a strong background in web development. My expertise lies in designing and developing user-friendly web applications using HTML, CSS, and JavaScript. I have experience in implementing responsive front-end designs with Bootstrap and Tailwind CSS, as well as building interactive user interfaces with React JS. My skill set includes integrating Firebase for authentication, database management, and real-time data updates. Additionally, I have optimized websites for SEO to enhance search engine rankings and drive organic traffic. Collaborating with back-end developers, I have successfully integrated APIs to enhance functionality, and I take pride in optimizing website performance while ensuring cross-browser compatibility. I am always eager to learn and explore new technologies to further enhance my development skills.
               </p>
               <div className='flex flex-col md:flex-row gap-5'>
                 <div className='w-full md:w-36 h-36 bg-gray-200 rounded-full flex justify-center items-center relative cursor-pointer'>

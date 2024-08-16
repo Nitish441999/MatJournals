@@ -14,12 +14,14 @@ function App() {
     <BrowserRouter>
     <ScrollTop/>
      <Navbar/>
+     
       <Routes>
         <Route path='/' element={<HeroSection/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path = '/projects' element = {<Project/>}/>
         <Route path='/resume' element = {<Resume/>}/>
       </Routes>
+      
       <Footer/>
       
     </BrowserRouter>
