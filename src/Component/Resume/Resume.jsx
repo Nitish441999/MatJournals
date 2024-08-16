@@ -1,4 +1,5 @@
 import React from 'react';
+import DownloadCv from '../../assets/Resume.pdf'
 
 const data = [
   {
@@ -66,7 +67,7 @@ function Resume() {
             <p className="text-base md:text-lg text-gray-600 text-center absolute bottom-[-24px]">Fullstack Developer</p>
             <div className="absolute right-0">
               <a
-                href="/path-to-your-resume.pdf"
+                href={DownloadCv}
                 download="Nitish-Kumar-Resume.pdf"
                 className="inline-block bg-rose-500 text-white py-2 px-4 rounded-lg hover:bg-rose-600 transition"
               >
