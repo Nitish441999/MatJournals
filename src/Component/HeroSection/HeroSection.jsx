@@ -51,7 +51,7 @@ function HeroSection() {
         </div>
       )}
       
-      <section className='h-screen flex justify-center items-center'>
+      <section className=' flex justify-center items-center'>
         <div className='w-full max-w-6xl h-auto flex flex-col gap-5 p-8 bg-white rounded-lg shadow-lg'>
           <div className='flex flex-col md:flex-row gap-5'>
             {/* Image Section */}

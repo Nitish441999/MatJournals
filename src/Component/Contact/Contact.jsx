@@ -49,7 +49,7 @@ function Contact() {
   };
 
   return (
-    <div className='min-h-screen flex justify-center items-center bg-gray-100'>
+    <div className=' flex justify-center items-center bg-gray-100'>
       <div className='flex flex-wrap max-w-6xl w-full bg-white p-10 rounded-lg shadow-sm'>
         {/* Contact Details */}
         <div className='w-full md:w-1/2 mb-8 md:mb-0 md:pr-8 flex flex-col' data-aos="fade-right" data-aos-duration="1700">
