@@ -1,12 +1,12 @@
-import React from 'react'
-import { FaLinkedin, FaInstagramSquare } from "react-icons/fa";
+import React from 'react';
+import { FaLinkedin, FaInstagramSquare, FaGithub } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <footer>
       <section className='px-10 py-10 bg-red-400'>
-        <div className='flex justify-between items-center '>
+        <div className='flex justify-between items-center'>
           <div>
             <ul>
               <li className='text-xl font-sans font-semibold'>Phone</li>
@@ -33,6 +33,11 @@ function Footer() {
                     <FaInstagramSquare aria-label="Instagram" />
                   </Link>
                 </li>
+                <li className='text-2xl font-thin'>
+                  <Link to="https://github.com/Nitish441999">
+                    <FaGithub aria-label="GitHub" />
+                  </Link>
+                </li>
               </ul>
             </ul>
           </div>
@@ -42,7 +47,7 @@ function Footer() {
         </div>
       </section>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

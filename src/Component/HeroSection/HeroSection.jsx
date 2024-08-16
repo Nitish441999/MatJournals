@@ -91,14 +91,14 @@ function HeroSection() {
               I am Nitish Kumar, a passionate Fullstack Developer with a strong background in web development. My expertise lies in designing and developing user-friendly web applications using HTML, CSS, and JavaScript. I have experience in implementing responsive front-end designs with Bootstrap and Tailwind CSS, as well as building interactive user interfaces with React JS. My skill set includes integrating Firebase for authentication, database management, and real-time data updates. Additionally, I have optimized websites for SEO to enhance search engine rankings and drive organic traffic. Collaborating with back-end developers, I have successfully integrated APIs to enhance functionality, and I take pride in optimizing website performance while ensuring cross-browser compatibility. I am always eager to learn and explore new technologies to further enhance my development skills.
               </p>
               <div className='flex flex-col md:flex-row gap-5'>
-                <div className='w-full md:w-36 h-36 bg-gray-200 rounded-full flex justify-center items-center relative cursor-pointer'>
+                <div className='w-full md:w-36 h-36 hover:bg-rose-400 bg-gray-200 rounded-full flex justify-center items-center relative cursor-pointer'>
                   <Link to="/resume" className='text-center text-lg font-semibold uppercase'>Resume</Link>
                 </div>
-                <div className='w-full md:w-36 h-36 bg-gray-200 rounded-full flex justify-center items-center relative cursor-pointer'>
+                <div className='w-full md:w-36 h-36 hover:bg-rose-400 bg-gray-200 rounded-full flex justify-center items-center relative cursor-pointer'>
                   <Link to="/projects" className='text-center text-lg font-semibold uppercase'>Project</Link>
                 </div>
-                <div className='w-full md:w-36 h-36 bg-gray-200 rounded-full flex justify-center items-center relative cursor-pointer'>
-                  <Link to="/contact" className='text-center text-lg font-semibold uppercase'>Contact</Link>
+                <div className='w-full md:w-36 h-36 hover:bg-rose-400 bg-gray-200 rounded-full flex justify-center items-center relative cursor-pointer'>
+                  <Link to="/contact" className='text-center text-lg font-semibold uppercase '>Contact</Link>
                 </div>
               </div>
             </div>
