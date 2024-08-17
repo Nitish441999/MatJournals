@@ -41,9 +41,9 @@ function Project() {
   }, []);
 
   return (
-    <div className='min-h-screen bg-gray-100 p-8'>
+    <div className='min-h-screen bg-gray-100 p-3 '>
       {data.map((item, index) => (
-        <div key={index} className='w-full max-w-7xl mx-auto mb-12 p-8 bg-white rounded-lg shadow-sm'>
+        <div key={index} className='w-full mx-auto max-w-7xl mb-12 p-8 bg-white rounded-lg shadow-sm'>
           <div className='flex flex-col md:flex-row gap-10'>
             {/* Left Side - Image */}
             <div className='w-full md:w-1/2 h-96 rounded-lg overflow-hidden' data-aos="fade-right" data-aos-duration="1700">
@@ -63,7 +63,7 @@ function Project() {
                   {item.title}
                 </h2>
               </a>
-              <p className='text-md font-light mb-4 first-letter:text-2xl first-letter:font-bold first-letter:text-rose-500'>
+              <p className='text-md font-light mb-4 first-letter:text-2xl first-letter:font-bold first-letter:text-rose-500 text-justify'>
                 {item.description}
               </p>
               <ul className='list-disc pl-5 flex gap-10'>
