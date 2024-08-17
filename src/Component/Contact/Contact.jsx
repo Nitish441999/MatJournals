@@ -4,7 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import emailjs from 'emailjs-com'; // Import emailjs
 
-
 function Contact() {
   useEffect(() => {
     AOS.init();
@@ -49,7 +48,7 @@ function Contact() {
   };
 
   return (
-    <div className=' flex justify-center items-center bg-gray-100'>
+    <div className='flex justify-center items-center bg-gray-100'>
       <div className='flex flex-wrap max-w-6xl w-full bg-white p-10 rounded-lg shadow-sm'>
         {/* Contact Details */}
         <div className='w-full md:w-1/2 mb-8 md:mb-0 md:pr-8 flex flex-col' data-aos="fade-right" data-aos-duration="1700">
@@ -145,6 +144,15 @@ function Contact() {
               <p className="text-green-500 text-center mt-4">Message sent successfully!</p>
             )}
           </form>
+          {/* Additional Text */}
+          <div className="mt-6 text-center">
+            <p className="text-gray-600">
+              Feel free to reach out if you have any questions or need further information. I'll get back to you as soon as possible.
+            </p>
+            <p className="text-gray-600 mt-2">
+              Thank you for your interest!
+            </p>
+          </div>
         </div>
       </div>
     </div>

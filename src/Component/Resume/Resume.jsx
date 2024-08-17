@@ -60,18 +60,18 @@ function Resume() {
   return (
     <div className="flex flex-col justify-between bg-gray-100">
       <section className="flex-grow p-4 md:p-8">
-        <div className="max-w-7xl mx-auto bg-white shadow-sm p-4 md:p-6 rounded-lg">
+        <div className="max-w-7xl mx-auto bg-white shadow-sm p-4 md:p-6 rounded-lg max-sm:w-full">
           {/* Resume Header */}
-          <header className="relative flex items-center justify-center  mb-8">
+          <header className="relative flex items-center justify-center  mb-8 mt-5 ">
             <h1 className="text-3xl md:text-4xl font-bold text-rose-500 text-center max-sm:absolute left-1 max-sm:text-2xl ">Nitish Kumar</h1>
             <p className="text-base md:text-lg text-gray-600 text-center absolute bottom-[-24px] max-sm:left-1 max-sm:bottom-[-35px] ">Fullstack Developer</p>
             <div className="absolute right-0 max-sm:mt-8">
               <a
                 href={DownloadCv}
                 download="Nitish-Kumar-Resume.pdf"
-                className="inline-block bg-rose-500 text-white py-2 px-4 rounded-lg hover:bg-rose-600 transition"
+                className="inline-block bg-rose-500 text-white py-2 px-6 rounded-lg hover:bg-rose-600 transition"
               >
-                Download Resume
+                Download CV
               </a>
             </div>
           </header>
@@ -79,7 +79,7 @@ function Resume() {
           {/* Resume Content */}
           <div>
             {/* Experience */}
-            <section className="mb-6">
+            <section className="mb-6 mt-14">
               <h2 className="text-xl md:text-2xl font-semibold mb-3 text-rose-500">Experience</h2>
               <div>
                 <p className="mb-2">

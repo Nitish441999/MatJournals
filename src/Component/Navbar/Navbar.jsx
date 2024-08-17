@@ -20,7 +20,12 @@ function Navbar() {
             </Link>
           </div>
           <div className="mt-4 md:mt-0">
-            <ul className="flex flex-wrap justify-center gap-3 text-lg font-thin text-white">
+            <ul className="flex flex-wrap justify-center gap-3 text-lg font-thin text-white max-sm:ml-7 max-sm:gap-5">
+              
+              <li className="cursor-pointer">
+                <Link to="/about">About</Link>
+              </li>
+              <span className="hidden sm:inline mx-2">|</span>
               <li className="cursor-pointer">
                 <Link to="/resume">Experience</Link>
               </li>

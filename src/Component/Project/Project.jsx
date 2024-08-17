@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -39,17 +38,18 @@ const data = [
 function Project() {
   useEffect(() => {
     AOS.init();
-}, []);
+  }, []);
+
   return (
     <div className='min-h-screen bg-gray-100 p-8'>
       {data.map((item, index) => (
-        <div key={index} className='w-full max-w-6xl mx-auto mb-12 p-8 bg-white rounded-lg shadow-sm'>
+        <div key={index} className='w-full max-w-7xl mx-auto mb-12 p-8 bg-white rounded-lg shadow-sm'>
           <div className='flex flex-col md:flex-row gap-10'>
             {/* Left Side - Image */}
             <div className='w-full md:w-1/2 h-96 rounded-lg overflow-hidden' data-aos="fade-right" data-aos-duration="1700">
               <a href={item.link} target='_blank' rel='noopener noreferrer'>
                 <img
-                  className='w-full h-full  bg-cover'
+                  className='w-full h-full bg-cover'
                   src={item.imageURL}
                   alt={`Project ${index + 1}`}
                 />
@@ -63,7 +63,7 @@ function Project() {
                   {item.title}
                 </h2>
               </a>
-              <p className='text-md font-light mb-4'>
+              <p className='text-md font-light mb-4 first-letter:text-2xl first-letter:font-bold first-letter:text-rose-500'>
                 {item.description}
               </p>
               <ul className='list-disc pl-5 flex gap-10'>

@@ -7,6 +7,7 @@ import Contact from './Component/Contact/Contact'
 import Project from './Component/Project/Project'
 import Resume from './Component/Resume/Resume'
 import ScrollTop from './Component/ScrolTop/ScrollTop'
+import About from './Component/About/About'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path = '/projects' element = {<Project/>}/>
         <Route path='/resume' element = {<Resume/>}/>
+        <Route path='/about' element = {<About/>}/>
       </Routes>
       
       <Footer/>

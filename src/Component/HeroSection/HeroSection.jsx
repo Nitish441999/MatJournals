@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 function HeroSection() {
   const [showPrompt, setShowPrompt] = useState(false);
-  const [greeting, setGreeting] = useState(''); 
+  const [greeting, setGreeting] = useState('');
 
   useEffect(() => {
     // Check if the prompt has already been shown during this session
@@ -51,11 +51,11 @@ function HeroSection() {
         </div>
       )}
       
-      <section className=' flex justify-center items-center'>
-        <div className='w-full max-w-6xl h-auto flex flex-col gap-5 p-8 bg-white rounded-lg shadow-lg'>
+      <section className='flex justify-center items-center'>
+        <div className='w-full max-w-7xl h-auto flex flex-col gap-5 p-8 bg-white rounded-lg shadow-lg'>
           <div className='flex flex-col md:flex-row gap-5'>
             {/* Image Section */}
-            <div className='w-full md:w-1/2 h-auto rounded-full overflow-hidden flex justify-center items-center relative'>
+            <div className='w-full md:w-1/2 h-auto rounded-full overflow-hidden flex justify-center items-center relative '>
               <img
                 className='w-full h-full object-cover bg-gray-100'
                 src='https://i.imgur.com/V1jQHWx.png'
@@ -66,7 +66,7 @@ function HeroSection() {
 
             {/* Text Section */}
             <div className='w-full md:w-1/2 flex flex-col justify-center'>
-              <h1 className='text-4xl font-bold mb-4 text-red-600'>Hello</h1>
+              <h1 className='text-4xl font-bold mb-4 text-rose-600'>Welcome</h1>
               <h3 className='text-2xl font-medium mb-2 uppercase text-red-500'>
                 <TypeAnimation
                   sequence={[
@@ -88,17 +88,20 @@ function HeroSection() {
                 />
               </h3>
               <p className='text-md font-light mb-4'>
-              I am Nitish Kumar, a passionate Fullstack Developer with a strong background in web development. My expertise lies in designing and developing user-friendly web applications using HTML, CSS, and JavaScript. I have experience in implementing responsive front-end designs with Bootstrap and Tailwind CSS, as well as building interactive user interfaces with React JS. My skill set includes integrating Firebase for authentication, database management, and real-time data updates. Additionally, I have optimized websites for SEO to enhance search engine rankings and drive organic traffic. Collaborating with back-end developers, I have successfully integrated APIs to enhance functionality, and I take pride in optimizing website performance while ensuring cross-browser compatibility. I am always eager to learn and explore new technologies to further enhance my development skills.
+                <strong className='text-3xl font-bold text-rose-500'>Hello!</strong> I'm Nitish Kumar, a dedicated Fullstack Developer with a passion for creating dynamic and responsive web applications. With expertise in modern technologies like React JS, JavaScript, and CSS frameworks, I specialize in delivering high-quality user experiences. Whether it's building interactive UIs or optimizing performance, I'm committed to delivering exceptional results. Explore my work and feel free to reach out for collaboration or inquiries.
               </p>
-              <div className='flex flex-col md:flex-row gap-5'>
+              <div className='flex flex-col md:flex-row  gap-5'>
                 <div className='w-full md:w-36 h-36 hover:bg-rose-400 bg-gray-200 rounded-full flex justify-center items-center relative cursor-pointer'>
                   <Link to="/resume" className='text-center text-lg font-semibold uppercase'>Resume</Link>
                 </div>
                 <div className='w-full md:w-36 h-36 hover:bg-rose-400 bg-gray-200 rounded-full flex justify-center items-center relative cursor-pointer'>
-                  <Link to="/projects" className='text-center text-lg font-semibold uppercase'>Project</Link>
+                  <Link to="/projects" className='text-center text-lg font-semibold uppercase'>Projects</Link>
                 </div>
                 <div className='w-full md:w-36 h-36 hover:bg-rose-400 bg-gray-200 rounded-full flex justify-center items-center relative cursor-pointer'>
-                  <Link to="/contact" className='text-center text-lg font-semibold uppercase '>Contact</Link>
+                  <Link to="/contact" className='text-center text-lg font-semibold uppercase'>Contact</Link>
+                </div>
+                <div className='w-full md:w-36 h-36 hover:bg-rose-400 bg-gray-200 rounded-full flex justify-center items-center relative cursor-pointer'>
+                  <Link to="/about" className='text-center text-lg font-semibold uppercase'>About</Link>
                 </div>
               </div>
             </div>
