@@ -40,7 +40,7 @@ function HeroSection() {
     }
   }, [showPrompt]);
 
-  return (
+  return (  
     <div>
       {/* Prompt Overlay */}
       {showPrompt && (
@@ -92,7 +92,7 @@ function HeroSection() {
               </p>
               <div className='flex flex-col md:flex-row  gap-5'>
                 <div className='w-full md:w-36 h-36 hover:bg-rose-400 bg-gray-200 rounded-full flex justify-center items-center relative cursor-pointer'>
-                  <Link to="/resume" className='text-center text-lg font-semibold uppercase'>Resume</Link>
+                  <Link to="/resume" className='text-center text-lg font-semibold uppercase'>Experience</Link>
                 </div>
                 <div className='w-full md:w-36 h-36 hover:bg-rose-400 bg-gray-200 rounded-full flex justify-center items-center relative cursor-pointer'>
                   <Link to="/projects" className='text-center text-lg font-semibold uppercase'>Projects</Link>

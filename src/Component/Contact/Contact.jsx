@@ -95,7 +95,7 @@ function Contact() {
                 placeholder='Your Name'
                 required
                 onChange={handleInputChange}
-              />
+              /> 
             </div>
             <div className='mb-6'>
               <label
