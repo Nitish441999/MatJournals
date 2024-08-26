@@ -10,6 +10,7 @@ const data = [
     Feature1: 'React, Vite',
     Feature2: 'JavaScript',
     Feature3: 'Firebase',
+    Feature4: 'Tailwind CSS',
     gitlink: 'https://github.com/Nitish441999/E-Bharat',
     link: 'https://ebhartwebsite.netlify.app'
   },
@@ -20,6 +21,7 @@ const data = [
     Feature1: 'React, Vite',
     Feature2: 'JavaScript',
     Feature3: 'Firebase',
+    Feature4: 'Tailwind CSS',
     gitlink: 'https://github.com/Nitish441999/Furniture',
     link: 'https://quiet-travesseiro-fd4fca.netlify.app'
   },
@@ -69,6 +71,7 @@ function Project() {
               <ul className='list-disc pl-5 flex gap-10'>
                 <li>{item.Feature1}</li>
                 <li>{item.Feature2}</li>
+                <li>{item.Feature3}</li>
                 <li>{item.Feature3}</li>
               </ul>
             </div>
