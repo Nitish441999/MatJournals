@@ -29,7 +29,8 @@ const data = [
     imageURL: 'https://i.imgur.com/Uv1VK7E.png', 
     title: 'Greats Ecommerce Website',
     description: "Greats Only, your premier e-commerce destination for stylish shoes. Powered by React, Vite, and JavaScript, our website offers a seamless shopping experience with fast load times and interactive features. Browse our curated collection of high-quality footwear, enjoy smooth navigation, and stay updated with the latest trends. Whether you're searching for trendy sneakers or elegant dress shoes, Greats Only provides a user-friendly interface and exceptional performance to make your shopping experience enjoyable and efficient.",
-    Feature1: 'React, Vite',
+    Feature1: 'React',
+    Feature4: 'Vite',
     Feature2: 'JavaScript',
     Feature3: 'Tailwind CSS',
     gitlink: 'https://github.com/Nitish441999/Creats',
@@ -72,7 +73,7 @@ function Project() {
                 <li>{item.Feature1}</li>
                 <li>{item.Feature2}</li>
                 <li>{item.Feature3}</li>
-                <li>{item.Feature3}</li>
+                <li>{item.Feature4}</li>
               </ul>
             </div>
           </div>
