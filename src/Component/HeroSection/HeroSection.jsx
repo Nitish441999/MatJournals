@@ -87,7 +87,7 @@ function HeroSection() {
                   style={{ display: 'inline-block' }}
                 />
               </h3>
-              <p className='text-md font-light mb-4'>
+              <p className='text-lg font-light mb-4'>
                 <strong className='text-3xl font-bold text-rose-500'>Hello!</strong> I'm Nitish Kumar, a dedicated Fullstack Developer with a passion for creating dynamic and responsive web applications. With expertise in modern technologies like React JS, JavaScript, and CSS frameworks, I specialize in delivering high-quality user experiences. Whether it's building interactive UIs or optimizing performance, I'm committed to delivering exceptional results. Explore my work and feel free to reach out for collaboration or inquiries.
               </p>
               <div className='flex flex-col md:flex-row  gap-5'>
