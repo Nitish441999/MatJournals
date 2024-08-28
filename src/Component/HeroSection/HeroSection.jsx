@@ -58,7 +58,7 @@ function HeroSection() {
             <div className='w-full md:w-1/2 h-auto rounded-full overflow-hidden flex justify-center items-center relative '>
               <img
                 className='w-full h-full object-cover bg-gray-100'
-                src='https://i.imgur.com/V1jQHWx.png'
+                src='https://i.imgur.com/SMEFxXy.jpeg'
                 alt='Developer'
               />
               {/* <div className='absolute inset-0 border-8 border-transparent rounded-full animate-spin-slow' style={{ borderColor: 'rgba(128, 128, 128, 0.5)' }}></div> */}
