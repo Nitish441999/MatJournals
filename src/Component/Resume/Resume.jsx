@@ -1,59 +1,75 @@
-import React from 'react';
-import DownloadCv from '../../assets/Resume.pdf'
+import React from "react";
+import DownloadCv from "../../assets/Resume.pdf";
 
 const data = [
   {
     imageURL: "https://cdn.worldvectorlogo.com/logos/html-1.svg",
-    titel: "HTML"
+    titel: "HTML",
   },
   {
     imageURL: "https://cdn.worldvectorlogo.com/logos/css-3.svg",
-    titel: "CSS"
+    titel: "CSS",
   },
   {
     imageURL: "https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg",
-    titel: "Bootstrap"
+    titel: "Bootstrap",
   },
   {
     imageURL: "https://cdn.worldvectorlogo.com/logos/tailwindcss.svg",
-    titel: "Tailwind CSS"
+    titel: "Tailwind CSS",
   },
   {
     imageURL: "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
-    titel: "Javascript"
+    titel: "Javascript",
   },
   {
     imageURL: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
-    titel: "React JS"
+    titel: "React JS",
   },
   {
     imageURL: "https://cdn.worldvectorlogo.com/logos/firebase-1.svg",
-    titel: "Firebase"
+    titel: "Firebase",
   },
   {
     imageURL: "https://cdn.worldvectorlogo.com/logos/java-4.svg",
-    titel: "Java"
+    titel: "Java",
   },
   {
     imageURL: "https://cdn.worldvectorlogo.com/logos/postgresql.svg",
-    titel: "SQL"
+    titel: "SQL",
   },
   {
     imageURL: "https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg",
-    titel: "VS-Code"
+    titel: "VS-Code",
   },
   {
     imageURL: "https://cdn.worldvectorlogo.com/logos/eclipse-11.svg",
-    titel: "Eclipse IDE"
+    titel: "Eclipse IDE",
   },
   {
     imageURL: "https://cdn.worldvectorlogo.com/logos/oracle-6.svg",
-    titel: "Oracle 11g"
+    titel: "Oracle 11g",
   },
   {
     imageURL: "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
-    titel: "GitHub"
-  }
+    titel: "GitHub",
+  },
+  {
+    imageURL: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
+    titel: "Node.js",
+  },
+  {
+    imageURL: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
+    titel: "MongoDB",
+  },
+  {
+    imageURL: "https://cdn.worldvectorlogo.com/logos/express-109.svg",
+    titel: "Express",
+  },
+  {
+    imageURL: "https://cdn.worldvectorlogo.com/logos/mongoose-1.svg",
+    titel: "Mongoose",
+  },
 ];
 
 function Resume() {
@@ -63,8 +79,12 @@ function Resume() {
         <div className="max-w-7xl mx-auto bg-white shadow-sm p-4 md:p-6 rounded-lg max-sm:w-full">
           {/* Resume Header */}
           <header className="relative flex items-center justify-center  mb-8 mt-5 ">
-            <h1 className="text-3xl md:text-4xl font-bold text-rose-500 text-center max-sm:absolute left-1 max-sm:text-2xl ">Nitish Kumar</h1>
-            <p className="text-base md:text-lg text-gray-600 text-center absolute bottom-[-24px] max-sm:left-1 max-sm:bottom-[-35px] ">Fullstack Developer</p>
+            <h1 className="text-3xl md:text-4xl font-bold text-rose-500 text-center max-sm:absolute left-1 max-sm:text-2xl ">
+              Nitish Kumar
+            </h1>
+            <p className="text-base md:text-lg text-gray-600 text-center absolute bottom-[-24px] max-sm:left-1 max-sm:bottom-[-35px] ">
+              Fullstack Developer
+            </p>
             <div className="absolute right-0 max-sm:mt-8">
               <a
                 href={DownloadCv}
@@ -80,30 +100,68 @@ function Resume() {
           <div>
             {/* Experience */}
             <section className="mb-6 mt-14">
-              <h2 className="text-xl md:text-2xl font-semibold mb-3 text-rose-500">Experience</h2>
+              <h2 className="text-xl md:text-2xl font-semibold mb-3 text-rose-500">
+                Experience
+              </h2>
               <div>
                 <p className="mb-2">
-                  <strong>Web Developer</strong> at <strong>Namrata Universal</strong> <br />
+                  <strong>Web Developer</strong> at{" "}
+                  <strong>Namrata Universal</strong> <br />
                   <em>Noida - 25/08/2023</em>
                 </p>
                 <ul className="list-disc pl-5">
-                  <li>Designed and developed user-friendly web applications using HTML, CSS, and JavaScript.</li>
-                  <li>Implemented responsive front-end designs with Bootstrap and Tailwind CSS.</li>
-                  <li>Built interactive user interfaces using React JS, with a focus on component-based architecture.</li>
-                  <li>Integrated Firebase for authentication, database management, and real-time data updates.</li>
-                  <li>Optimized websites for SEO to improve search engine rankings and drive organic traffic.</li>
-                  <li>Collaborated with back-end developers to integrate APIs and enhance functionality.</li>
-                  <li>Optimized website performance and ensured cross-browser compatibility.</li>
+                  <li>
+                    Designed and developed user-friendly web applications using
+                    HTML, CSS, and JavaScript.
+                  </li>
+                  <li>
+                    Implemented responsive front-end designs with Bootstrap and
+                    Tailwind CSS.
+                  </li>
+                  <li>
+                    Built interactive user interfaces using React JS, with a
+                    focus on component-based architecture.
+                  </li>
+                  <li>
+                    Integrated Firebase for authentication, database management,
+                    and real-time data updates.
+                  </li>
+                  <li>
+                    Optimized websites for SEO to improve search engine rankings
+                    and drive organic traffic.
+                  </li>
+                  <li>
+                    Collaborated with back-end developers to integrate APIs and
+                    enhance functionality.
+                  </li>
+                  <li>
+                    Developed RESTful APIs and backend endpoints using Node.js
+                    and Express.
+                  </li>
+                  <li>
+                    Implemented data storage and retrieval solutions using
+                    MongoDB, ensuring efficient database design and queries.
+                  </li>
+                  <li>
+                    Optimized website performance and ensured cross-browser
+                    compatibility.
+                  </li>
                 </ul>
               </div>
             </section>
 
             {/* Education */}
             <section className="mb-6">
-              <h2 className="text-xl md:text-2xl font-semibold mb-3 text-rose-500">Education</h2>
+              <h2 className="text-xl md:text-2xl font-semibold mb-3 text-rose-500">
+                Education
+              </h2>
               <div>
                 <p className="mb-2">
-                  <strong>B-Tech</strong> at <strong>Durgapur Institute of Advanced Technology and Management</strong> <br />
+                  <strong>B-Tech</strong> at{" "}
+                  <strong>
+                    Durgapur Institute of Advanced Technology and Management
+                  </strong>{" "}
+                  <br />
                   <em>Durgapur, West Bengal - 09/2021</em>
                 </p>
               </div>
@@ -111,10 +169,15 @@ function Resume() {
 
             {/* Skills */}
             <section>
-              <h2 className="text-3xl md:text-4xl font-bold mb-3 text-center py-3 text-rose-500">Skills</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-3 text-center py-3 text-rose-500">
+                Skills
+              </h2>
               <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
-                {data.map(skill => (
-                  <li key={skill.titel} className="relative flex items-center justify-center group w-28 h-28">
+                {data.map((skill) => (
+                  <li
+                    key={skill.titel}
+                    className="relative flex items-center justify-center group w-28 h-28"
+                  >
                     <img
                       src={skill.imageURL}
                       alt={skill.titel}

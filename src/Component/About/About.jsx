@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaJava, FaGithub, FaBootstrap, FaGitAlt, FaDatabase } from 'react-icons/fa';
-import { SiTailwindcss, SiFirebase, SiOracle, SiVisualstudiocode } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaJava, FaGithub, FaBootstrap, FaGitAlt, FaDatabase, FaNodeJs } from 'react-icons/fa';
+import { SiTailwindcss, SiFirebase, SiOracle, SiVisualstudiocode, SiMongodb, SiExpress, SiMongoose } from 'react-icons/si';
 import DownloadCv from '../../assets/Resume.pdf';
 
 function About() {
@@ -63,16 +63,20 @@ function About() {
                 <p className="text-sm md:text-base text-gray-700">React</p>
               </div>
               <div className="flex flex-col items-center">
-                <FaJava className="text-4xl text-red-600 mb-2" />
-                <p className="text-sm md:text-base text-gray-700">Java</p>
+                <FaNodeJs className="text-4xl text-green-500 mb-2" />
+                <p className="text-sm md:text-base text-gray-700">Node.js</p>
               </div>
               <div className="flex flex-col items-center">
-                <FaGithub className="text-4xl text-gray-800 mb-2" />
-                <p className="text-sm md:text-base text-gray-700">GitHub</p>
+                <SiExpress className="text-4xl text-gray-800 mb-2" />
+                <p className="text-sm md:text-base text-gray-700">Express</p>
               </div>
               <div className="flex flex-col items-center">
-                <FaBootstrap className="text-4xl text-purple-500 mb-2" />
-                <p className="text-sm md:text-base text-gray-700">Bootstrap</p>
+                <SiMongodb className="text-4xl text-green-600 mb-2" />
+                <p className="text-sm md:text-base text-gray-700">MongoDB</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <SiMongoose className="text-4xl text-red-600 mb-2" />
+                <p className="text-sm md:text-base text-gray-700">Mongoose</p>
               </div>
               <div className="flex flex-col items-center">
                 <SiTailwindcss className="text-4xl text-teal-500 mb-2" />
@@ -89,6 +93,14 @@ function About() {
               <div className="flex flex-col items-center">
                 <SiFirebase className="text-4xl text-yellow-500 mb-2" />
                 <p className="text-sm md:text-base text-gray-700">Firebase</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <FaJava className="text-4xl text-red-600 mb-2" />
+                <p className="text-sm md:text-base text-gray-700">Java</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <FaGithub className="text-4xl text-gray-800 mb-2" />
+                <p className="text-sm md:text-base text-gray-700">GitHub</p>
               </div>
               <div className="flex flex-col items-center">
                 <SiOracle className="text-4xl text-red-600 mb-2" />
