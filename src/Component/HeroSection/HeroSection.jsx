@@ -70,6 +70,10 @@ function HeroSection() {
               <h3 className='text-2xl font-medium mb-2 uppercase text-red-500'>
                 <TypeAnimation
                   sequence={[
+                    'Full Stack Developer', // Types 'Web Developer'
+                    1000, // Waits 1 second
+                    'Backend Developer', // Types 'Web Developer'
+                    1000, // Waits 1 second
                     'Web Developer', // Types 'Web Developer'
                     1000, // Waits 1 second
                     'Frontend Developer', // Types 'Frontend Developer'
