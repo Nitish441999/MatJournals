@@ -108,12 +108,12 @@ function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-center px-4 py-5">
+          <div className="flex justify-between items-center px-4 py-1">
             {/* Logo Section */}
             <div className="flex items-center gap-3">
               <img
-                className="h-12 w-12 rounded-full"
-                src="https://i.imgur.com/SMEFxXy.jpeg"
+                className=" h-20 w-22 rounded-full"
+                src="https://i.imgur.com/wtvq8dV.jpeg"
                 alt="Profile"
               />
             </div>
