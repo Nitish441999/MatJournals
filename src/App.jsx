@@ -1,34 +1,50 @@
-import React from 'react'
-import Navbar from './Component/Navbar/Navbar'
-import Footer from './Component/Footer/Footer'
-import HeroSection from './Component/HeroSection/HeroSection'
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
-import Contact from './Component/Contact/Contact'
-import Project from './Component/Project/Project'
-import Resume from './Component/Resume/Resume'
-import ScrollTop from './Component/ScrolTop/ScrollTop'
-import About from './Component/About/About'
+import React, { useState, useEffect } from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import Navbar from "./Component/Navbar/Navbar";
+import Home from "./Component/Home/Home";
+import Footer from "./Component/Footer/Footer";
+import About from "./Pages/About/About";
+import Contact from "./Pages/Contact/Contact";
+import Loading from "./Component/Loading/Loading";
 
 function App() {
   return (
-    <div>
     <BrowserRouter>
-    <ScrollTop/>
-     <Navbar/>
-     
-      <Routes>
-        <Route path='/' element={<HeroSection/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path = '/projects' element = {<Project/>}/>
-        <Route path='/resume' element = {<Resume/>}/>
-        <Route path='/about' element = {<About/>}/>
-      </Routes>
-      
-      <Footer/>
-      
+      <MainContent />
     </BrowserRouter>
-    </div>
-  )
+  );
 }
 
-export default App
+function MainContent() {
+  const [loading, setLoading] = useState(false);
+  const location = useLocation(); // Tracks the current route
+
+  useEffect(() => {
+    setLoading(true);
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 1000); // Adjust duration as needed
+
+    return () => clearTimeout(timeout); // Cleanup timeout
+  }, [location.pathname]); // Trigger effect when route changes
+
+  return (
+    <div>
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+          <Footer />
+        </>
+      )}
+    </div>
+  );
+}
+
+export default App;

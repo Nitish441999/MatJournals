@@ -1,51 +1,147 @@
-import React from 'react';
-import { FaLinkedin, FaInstagramSquare, FaGithub } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import React from "react";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaPinterestP,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer>
-      <section className='px-6 sm:px-10 py-6 sm:py-10 bg-red-400'>
-        <div className='flex flex-col md:flex-row justify-between items-center text-center md:text-left'>
-          <div className='mb-4 md:mb-0'>
-            <ul>
-              <li className='text-lg sm:text-xl font-sans font-semibold'>Phone</li>
-              <li className='text-md font-semibold text-white'>+91 9572576470</li>
-            </ul>
-          </div>
-          <div className='mb-4 md:mb-0'>
-            <ul>
-              <li className='text-lg sm:text-xl font-sans font-semibold'>Email</li>
-              <li className='text-md font-semibold text-white'>nitish44199@gmail.com</li>
-            </ul>
-          </div>
-          <div className='mb-4 md:mb-0'>
-            <ul>
-              <li className='text-lg sm:text-xl font-sans font-semibold'>Follow Me</li>
-              <ul className='flex justify-center md:justify-start gap-3 mt-2 text-white'>
-                <li className='text-2xl'>
-                  <Link to="https://www.linkedin.com/in/nitish-kumar-416717251/" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin aria-label="LinkedIn" />
-                  </Link>
+    <footer className="bg-[#a9804e] text-white py-10">
+      <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        {/* Quick Links */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4 border-b border-gray-600 pb-2">
+            QUICK LINKS
+          </h3>
+          <ul className="space-y-2 text-white">
+            {["About", "Blogs", "FAQs", "Contact", "Consultancy"].map(
+              (item) => (
+                <li key={item} className="hover:text-white cursor-pointer">
+                  {item}
                 </li>
-                <li className='text-2xl'>
-                  <Link to="https://www.instagram.com/am_nitish_yadav/" target="_blank" rel="noopener noreferrer">
-                    <FaInstagramSquare aria-label="Instagram" />
-                  </Link>
-                </li>
-                <li className='text-2xl'>
-                  <Link to="https://github.com/Nitish441999" target="_blank" rel="noopener noreferrer">
-                    <FaGithub aria-label="GitHub" />
-                  </Link>
-                </li>
-              </ul>
-            </ul>
-          </div>
-          <div>
-            <p className='text-sm md:text-base'>By Nitish Kumar.</p>
-          </div>
+              )
+            )}
+          </ul>
         </div>
-      </section>
+
+        {/* Destinations */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4 border-b border-gray-600 pb-2">
+            DESTINATIONS
+          </h3>
+          <ul className="space-y-2 text-white">
+            {["India", "UAE", "Turkey", "Thailand"].map((item) => (
+              <li key={item} className="hover:text-white cursor-pointer">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Our Locations */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4 border-b border-gray-600 pb-2">
+            OUR LOCATIONS
+          </h3>
+          <ul className="text-white space-y-3 text-sm">
+            <li>
+              <strong>DELHI / NCR:</strong> 1st Floor, Landmark Cyber Park,
+              Gurugram, Haryana
+            </li>
+            <li>
+              <strong>AHMEDABAD:</strong> Regus, Earth Arise, 11th floor, SG
+              Highway
+            </li>
+            <li>
+              <strong>MUMBAI:</strong> Regus Level 4, Dynasty Business Park,
+              Andheri
+            </li>
+            <li>
+              <strong>HYDERABAD:</strong> SLN Terminus, Gachibowli
+            </li>
+            <li>
+              <strong>BANGALORE:</strong> The Estate, Dickenson Road
+            </li>
+            <li>
+              <strong>KOLKATA:</strong> RDB Boulevard, Sector-V, Salt Lake
+            </li>
+            <li>
+              <strong>DUBAI, UAE:</strong> Sheikh Rashid Tower, DWTC
+            </li>
+          </ul>
+        </div>
+
+        {/* Contact Info */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4 border-b border-gray-600 pb-2">
+            CONTACT US
+          </h3>
+          <p className="text-white text-sm">
+            <strong>Email:</strong>{" "}
+            <a href="mailto:info@Namrata.com" className="hover:text-white">
+              info@Namrata.com
+            </a>
+          </p>
+          <p className="text-white text-sm mt-2">
+            <strong>Call:</strong>{" "}
+            <a href="tel:+918083888688" className="hover:text-white">
+              +91 80838 88688
+            </a>
+          </p>
+        </div>
+      </div>
+
+      {/* Destination Wedding Locations */}
+      <div className="w-[90%] mx-auto mt-10">
+        <h3 className="text-xl font-semibold mb-4 border-b border-gray-600 pb-2">
+          India Destination Wedding Hotels
+        </h3>
+        <ul className="flex flex-wrap gap-4 text-white text-sm">
+          {[
+            "Udaipur",
+            "Jaipur",
+            "Mussoorie",
+            "Lonavala",
+            "Goa",
+            "Karjat",
+            "Agra",
+          ].map((city) => (
+            <li key={city} className="hover:text-white cursor-pointer">
+              Destination Wedding Hotels {city}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Social Media & Copyright */}
+      <div className="w-[90%] mx-auto mt-10 flex flex-col md:flex-row justify-between items-center text-white text-sm">
+        <p>© Namrata Hospitality Pvt. Ltd. | All Rights Reserved</p>
+
+        {/* Social Media Icons */}
+        <div className="flex gap-4 mt-4 md:mt-0">
+          {[
+            FaFacebookF,
+            FaInstagram,
+            FaLinkedinIn,
+            FaPinterestP,
+            FaTwitter,
+            FaYoutube,
+          ].map((Icon, index) => (
+            <Icon
+              key={index}
+              className="text-xl hover:text-white cursor-pointer"
+            />
+          ))}
+        </div>
+
+        <p className="text-white text-xs uppercase tracking-wide">
+          Website Architect by Nitish Yadav
+        </p>
+      </div>
     </footer>
   );
 }
