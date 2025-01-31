@@ -289,7 +289,7 @@ function Navbar() {
                 </li>
               </ul>
             </div>
-            <button className="flex items-center justify-center gap-2 py-3 px-10 text-white text-center bg-[#a9804e] rounded-lg uppercase hover:bg-[#8a6a3c] transition-colors">
+            <button className="flex items-center justify-center gap-2 py-3 px-10 text-white text-center bg-[#a9804e] rounded-lg uppercase hover:bg-[#8a6a3c] transition-colors max-sm:hidden">
               <FaWhatsapp className="text-lg" />
               Chat Now
             </button>
