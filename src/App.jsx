@@ -3,10 +3,10 @@ import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./Component/Navbar/Navbar";
 import Home from "./Component/Home/Home";
 import Footer from "./Component/Footer/Footer";
-import About from "./Pages/About/About";
-import Contact from "./Pages/Contact/Contact";
+
 import Loading from "./Component/Loading/Loading";
 
+import "./App.css";
 function App() {
   return (
     <BrowserRouter>
@@ -37,8 +37,10 @@ function MainContent() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
+            {/* <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/:city" element={<Hotels />} />
+            <Route path="/:city/:hotelId" element={<HotelDetails />} /> */}
           </Routes>
           <Footer />
         </>

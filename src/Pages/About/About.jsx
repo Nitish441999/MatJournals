@@ -6,7 +6,7 @@ const About = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Duration for the animations
-      once: true, // Animation triggers once
+      // once: true, // Animation triggers once
     });
   }, []);
 

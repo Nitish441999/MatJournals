@@ -1,18 +1,23 @@
 import React from "react";
-import OurWeddings from "../OurWeddings/OurWeddings";
-import DestinationWeddingPlanner from "../DestinationWeddingPlanner/DestinationWeddingPlanner";
+
 import NamrataExports from "../NamrataExports/NamrataExports";
 import OurBlogs from "../OurBlogs/OurBlogs";
 import HotelBrands from "../HotelBrands/HotelBrands";
+import Faqs from "../Faq/Faqs";
+import Journals from "../Journals/Journals";
+import About from "../About/About";
+import Contact from "../Contact/Contact";
 
 function Home() {
   return (
     <div>
-      <OurWeddings />
-      <DestinationWeddingPlanner />
+      <Journals />
+      <About />
       <HotelBrands />
-      <NamrataExports />
+
       <OurBlogs />
+      <Contact />
+      {/* <Faqs /> */}
     </div>
   );
 }

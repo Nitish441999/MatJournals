@@ -1,91 +1,133 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 function OurBlogs() {
   useEffect(() => {
     AOS.init();
   }, []);
 
+  const blogData = [
+    {
+      img: "https://matjournals.com/img/Dr%20Amit%20Kumar.jpg",
+      title: "Dr. Amit Kumar",
+      subTitle: "Assistant Professor",
+      desc: "The future of computer science is Artificial Intelligence (AI). AI has become an integral part of our lives, making daily tasks easier and turning science fiction into reality.",
+    },
+    {
+      img: "https://matjournals.com/img/Binu%20Joe.jpg",
+      title: "Binu Joe",
+      subTitle: "Principal",
+      desc: "Nursing, which means to nurture and care, is the mother of all sciences. The demand for qualified and competent nurses is at an all-time high, from family setups to institutional levels.",
+    },
+    {
+      img: "https://matjournals.com/img/rupali.jpg",
+      title: "Rupali M. Patil",
+      subTitle: "Assistant Professor",
+      desc: "Mechanical Engineering unites the human world with technology. From ancient innovations to modern advancements, it plays a crucial role in everyday life.",
+    },
+  ];
+
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const toggleExpand = (index) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: { slidesToShow: 2 },
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 1 },
+      },
+    ],
+  };
+
   return (
-    <div className="py-10">
+    <div className="py-10 overflow-hidden ">
       <section className="text-center w-[90%] mx-auto">
         <h3
-          className="text-4xl font-semibold tracking-wider text-[#a9804e] uppercase py-7"
+          className="text-4xl font-semibold tracking-wider text-blue-600 uppercase py-7"
           data-aos="fade-up"
-          data-aos-duration="1000"
         >
-          World of NAMRATA - Luxury Wedding Blogs
+          Editorial Blogs
         </h3>
-        <p
-          className="text-xl font-thin text-gray-600 mb-10"
-          data-aos="fade-up"
-          data-aos-duration="1200"
-        >
-          Stay on top of global luxury wedding trends with Namrata’s Wedding
-          Planning Blogs. Curate your wishlist by following the most
-          sought-after wedding trends. From idyllic locations, the best in hair
-          and makeup, photography, stunning bridal and groom outfits, celebrity
-          weddings, Namrata’s Wedding Blog is your bridge into the immersive
-          world of luxury weddings.
+        <p className="text-xl font-thin text-gray-600 mb-10" data-aos="fade-up">
+          Stay updated with the latest blogs on various topics from experts.
         </p>
+        <Slider {...settings} className=" overflow-hidden">
+          {blogData.map((blog, index) => {
+            const isExpanded = expandedIndex === index;
+            return (
+              <div key={index} className="flex justify-center gap-4">
+                {/* Added gap here */}
+                <div className="flex flex-col md:flex-row bg-white w-full shadow-md rounded-lg overflow-hidden">
+                  {/* Image */}
+                  <div className="w-full md:w-1/2">
+                    <img
+                      src={blog.img}
+                      alt={blog.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  {/* Text Content */}
+                  <div
+                    className={`w-full md:w-1/2 p-5 transition-all duration-300 ${
+                      isExpanded ? "w-[60%]" : "w-[50%]"
+                    }`}
+                  >
+                    <h1 className="text-xl font-semibold text-gray-800">
+                      {blog.title}
+                    </h1>
+                    <p className="text-blue-600 font-medium">{blog.subTitle}</p>
+                    <p className="text-gray-600 text-sm mt-2 text-justify">
+                      {isExpanded
+                        ? blog.desc
+                        : blog.desc.length > 60
+                        ? blog.desc.slice(0, 60) + "..."
+                        : blog.desc}
+                    </p>
+                    {/* Button always appears at the bottom */}
+                    <button
+                      onClick={() => toggleExpand(index)}
+                      className="text-blue-600 font-semibold mt-2 hover:underline"
+                    >
+                      {isExpanded ? "Read Less" : "Read More"}
+                    </button>
 
-        {/* Blog Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-            {
-              img: "https://www.varmalla.com/wp-content/uploads/2024/02/Slide3.jpg",
-              title: "Tips To Customise Your Destination Wedding Packages",
-              desc: "Tying the knot beneath the veil of stars is the dream of every wedding...",
-            },
-            {
-              img: "https://www.varmalla.com/wp-content/uploads/2024/02/Main-Image.webp",
-              title:
-                "Keep It Secret: Secure Best Destination Wedding Hotel Deals in Agra",
-              desc: "The city that pays homage to one of the most significant mementoes of love...",
-            },
-            {
-              img: "https://www.varmalla.com/wp-content/uploads/2023/04/weddign-in-agra-h-img.webp",
-              title:
-                "Exquisite Destination Wedding Hotels in Agra, The Taj City",
-              desc: "If we talk about choosing a destination for your wedding, the most obvious answer...",
-            },
-          ].map((blog, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-md rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl"
-              data-aos="fade-up"
-              data-aos-duration="1300"
-              data-aos-delay={index * 200}
-            >
-              <img
-                src={blog.img}
-                alt={blog.title}
-                className="w-full h-60 object-cover rounded-t-lg hover:scale-105 transition-transform duration-300"
-              />
-              <div className="p-5 text-left">
-                <h1 className="text-xl font-semibold text-gray-800 mb-2">
-                  {blog.title}
-                </h1>
-                <p className="text-gray-600 text-sm">{blog.desc}</p>
-                <button className="mt-4 bg-[#a9804e] text-white px-6 py-2 rounded-md shadow-md hover:bg-white hover:text-[#a9804e] hover:border-[#a9804e] border transition-all duration-300 uppercase">
-                  Read More
-                </button>
+                    {/* Social Icons */}
+                    <div className="flex space-x-4 justify-center mt-4">
+                      <a href="#" className="text-blue-600 text-xl">
+                        <FaFacebookF />
+                      </a>
+                      <a href="#" className="text-blue-400 text-xl">
+                        <FaTwitter />
+                      </a>
+                      <a href="#" className="text-blue-700 text-xl">
+                        <FaLinkedinIn />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-
-        {/* View All Blogs Button */}
-        <div className="mt-10">
-          <button
-            className="bg-[#a9804e] text-white px-10 py-3 text-lg rounded-md shadow-md hover:bg-white hover:text-[#a9804e] hover:border-[#a9804e] border transition-all duration-300 uppercase"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
-            View All Blogs
-          </button>
-        </div>
+            );
+          })}
+        </Slider>
       </section>
     </div>
   );
